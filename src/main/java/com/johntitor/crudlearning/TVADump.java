@@ -109,7 +109,6 @@ public class TVADump {
                     Date date1 = getDate(key);
                     if (date1.toString().equalsIgnoreCase(date.toString())) {
                         String parameter = "US";
-                        System.out.println("HAHA: " + date1);
                         PojoCSV csv = new PojoCSV(asset.getAssetId(), key.toString(), parameter, value);
                         listCSV.add(csv);
                     }
@@ -118,7 +117,6 @@ public class TVADump {
                     Date date1 = getDate(key);
                     if (date1.toString().equalsIgnoreCase(date.toString())) {
                         String parameter = "RSL";
-                        System.out.println("HAHA: " + date1);
                         PojoCSV csv = new PojoCSV(asset.getAssetId(), key.toString(), parameter, value);
                         listCSV.add(csv);
                     }
