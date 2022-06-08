@@ -1,0 +1,1 @@
+select ASSET_ID, `INPUT`, COLLECTING_DATE , sum(VALUE) from inspection_agg_1 ia where COLLECTING_DATE like '2022-06-05%' group by `INPUT`, ASSET_ID  
